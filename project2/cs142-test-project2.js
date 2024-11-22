@@ -7,7 +7,7 @@
  */
 
 /* eslint-env browser, node */
-
+(function() {
 // Result message for Problems 1-3
 var p1Message = "SUCCESS";
 var p2Message = "SUCCESS";
@@ -172,6 +172,7 @@ varDeclared.forEach(function (sym) {
 });
 console.log("Test Problem 3:", p3Message);
 
+
 // Store the result back into the global space under the object name
 // cs142Project2Results
 window.cs142Project2Results = {
@@ -188,3 +189,4 @@ window.onload = function () {
   document.getElementById("cs142p2").innerHTML = p2Message;
   document.getElementById("cs142p3").innerHTML = p3Message;
 };
+})()
